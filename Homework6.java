@@ -8,11 +8,7 @@
     }
     public String getCode() { return code; }
     public String getName() { return name; }
-
-     @Override
-     public String toString() {
-         return "Code: " + code + ", Name: " + name;
-     }
+ }
 
     class OnlineCourse extends Course {
         public OnlineCourse(String code, String name) {
@@ -20,7 +16,7 @@
         }
         @Override
         public String toString() {
-            return "OnlineCourse: " + super.toString() + ", Type: Online";
+            return "Code: " + code + ", Name: " + name + ", Type: Online";
         }
     }
 
@@ -30,13 +26,12 @@
         }
         @Override
         public String toString() {
-            return "OfflineCourse: " + super.toString() + ", Type: Offline";
+            return  "Code: " + code + ", Name: " + name + ", Type: Offline";
 
         }
     }
 
 
-}
 
 public class Homework6
 {
